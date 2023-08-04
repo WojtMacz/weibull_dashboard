@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run weibull_dashboard.py
+web: sh setup.sh && streamlit run app_weibull.py
