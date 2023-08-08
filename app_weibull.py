@@ -68,12 +68,12 @@ if opcje == 'Wprowadzenie do analizy Weibulla':
              - β=1.0 Oznacza "losowe" lub "stałe" awarie. Ten rodzaj rozkładu jest najczęściej stosowany do niektórych kategorii komponentów elektronicznych, takich jak półprzewodniki.
              - β>1.0 Wskazuje na styl rozkładu zużycia. Rozkład ten jest powszechnie obserwowany w przypadku elementów takich jak łożyska, których awaryjność wzrasta wraz ze wzrostem zużycia.
              """)
-    st.image('beta-effects-on-pdf.png')
+    st.image('beta-effects-on-pdf.png',use_column_width=True)
     st.markdown(""" 
                 Możliwe jest, aby produkt wykazywał wszystkie te trzy cechy w odniesieniu do różnych komponentów. Wyobraźmy sobie samochód, który ma materiały klejące, elektronikę i łożyska, z których każdy ma swój własny rozkład awarii. 
                 Dzięki dokładnej analizie trybów awarii możliwe jest określenie rozkładów awarii poszczególnych komponentów, co pozwala projektantowi na potencjalną identyfikację i rozwiązanie najbardziej problematycznych elementów projektu w pierwszej kolejności.
                 """)
-    st.image('beta-effects-on-fr.png')
+    st.image('beta-effects-on-fr.png', use_column_width=True)
     st.markdown(""" 
                 To właśnie połączenie tych trzech potencjalnie różnych charakterystyk β daje początek tradycyjnej krzywej wannowej powszechnie obserwowanej w analizie niezawodności.
                 Przyglądając się bliżej wykresowi wskaźników awaryjności, można zauważyć, że produkt składający się z trzech różnych komponentów o charakterystyce βmoże zacząć tworzyć ogólną krzywą wannową złożonych wskaźników awaryjności
@@ -83,7 +83,7 @@ if opcje == 'Wprowadzenie do analizy Weibulla':
                 Parametr **skali**, η określa skalę rozkładu. 
                 Parametr ten jest również znany jako charakterystyczna żywotność produktu i odpowiada cyklom, w których 63% produktu uległo awarii
                 """)
-    st.image('eta-effects-on-pdf.png')
+    st.image('eta-effects-on-pdf.png', use_column_width=True)
     st.markdown(""" 
                 Należy zauważyć, że zmiany współczynnika skali zachowują kształt, ale skutecznie zmieniają długość, na którą rozkład jest "rozciągnięty". 
                 Zmiana wysokości wynika z faktu, że obszar pod krzywą musi być zawsze równy 1,0
@@ -106,7 +106,7 @@ if opcje == 'Wprowadzenie do analizy Weibulla':
                 Odległość od linii będzie znajdować się w rozkładzie normalnym rozciągniętym wzdłuż linii.
 
                 """)
-    st.image('weibull-fit-10pt.png')
+    st.image('weibull-fit-10pt.png', use_column_width=True)
     st.markdown(""" 
                 Aplikacja ta integruje limity ufności przy obliczaniu β i η w taki sposób, że granice ufności określają zakres pewności dla β i η niezależnie. 
                 Na przykład, jeśli granica ufności wynosi 0,95, to nasze obliczenia dają 95% pewności, że prawdziwa wartość β mieści się między βlower i βupper. 
